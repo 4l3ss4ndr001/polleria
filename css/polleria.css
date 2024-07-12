@@ -1,0 +1,25 @@
+div{
+    font-size: 30px;
+}
+table{
+    margin: 0 auto;
+    width: 80%;
+}
+h1{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}
+.tablita td{
+    border-radius: 20px;
+    margin-left: 10px;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+.tablita p{
+    color: black;
+}
+button{
+    font-size: 25px;
+}

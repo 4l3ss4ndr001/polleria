@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Elementos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>TIENDA DE ROPA DEPORTIVA</h1>        
+        <div style="float: left;">
+            Instituto CERTUS
+        </div>
+        <div style="float: right;">
+            atencion@certus.edu.pe
+        </div>        
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="img/banner-certus.webp" width="100%" alt="Banner del Instituto Certus">
+            </div>
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li>Tiendas</li>
+                    <li>Ventas al por mayor</li>
+                    <li>Sucursales</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </section>
+        <h2>Zapatillas</h2>
+        <section>
+            <article class="catalogo">
+                <figure>
+                    <img src="img/productos/n1.jpg" alt="Descripción de la imagen 1">
+                    <figcaption>
+                        <p style="width: 100%;">
+                            Zapatillas deportivas Adidas 
+                        </p>
+                    </figcaption>
+                    <a href=""><button class="btn">Ver detalle</button></a>
+                </figure>
+                <figure>
+                    <img src="img/productos/n2.jpg" alt="Descripción de la imagen 2">
+                    <figcaption>
+                        <p style="width: 100%;">
+                            Reloj analógico con sensor de movimiento
+                        </p>
+                    </figcaption>
+                    <a href=""><button class="btn" >Ver detalle</button></a>
+                </figure>
+                <figure>
+                    <img src="img/productos/n3.jpg" alt="Descripción de la imagen 3">
+                    <figcaption>
+                        <p style="width: 100%;">
+                            Descripción de la imagen 3
+                        </p>
+                    </figcaption>
+                    <a href=""><button class="btn" >Ver detalle</button></a>
+                </figure>
+            </article>
+        </section>
+        <h2>Pantalones</h2>
+        <section>
+            <article class="catalogo">
+                <figure>
+                    <img src="img/productos/n4.jpg" alt="Descripción de la imagen 1">
+                    <figcaption>
+                        <p style="width: 100%;">
+                            Zapatillas deportivas Adidas
+                        </p>
+                    </figcaption>
+                    <a href="" ><button class="btn" >Ver detalle</button></a>
+                </figure>
+                <figure>
+                    <img src="img/productos/n1.jpg" alt="Descripción de la imagen 2">
+                    <figcaption>Reloj analógico con sensor de movimiento</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/productos/n3.jpg" alt="Descripción de la imagen 3">
+                    <figcaption>Descripción de la imagen 3</figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+          if (!myLandbot) {
+            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+            s.addEventListener('load', function() {
+              var myLandbot = new Landbot.Livechat({
+                configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2548471-30WEHDNXYM66NLV0/index.json',
+              });
+            });
+            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+        </script>
+</body>
+</html>
